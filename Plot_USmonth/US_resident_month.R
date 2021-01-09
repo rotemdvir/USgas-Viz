@@ -93,6 +93,10 @@ top.dat <- us_total %>%
 top.plot <- ggplot(top.dat, aes(x = factor(year), y = y, group = state)) +
   geom_line(aes(color = state)) +
   geom_point(aes(color = state)) +
-  ggtitle("Total consumption trends (1989-2019)") +
-  theme_classic()
+  ggtitle("Total consumption trends (1997-2019)") + ylab("Total Consumption - Yearly") + xlab("") +
+  scale_x_discrete(breaks = c(1998, 2001, 2004, 2007, 2010, 2013, 2016, 2019)) +
+  theme_classic() +
+  theme(legend.background = element_rect(size = 0.5, linetype = "solid", colour = "black"),
+        plot.title = element_text(color = "navyblue", size=16, face="bold.italic", hjust = 0.5),
+        axis.title.y = element_text(margin = margin(r=10)))
 
