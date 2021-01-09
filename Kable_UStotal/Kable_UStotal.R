@@ -133,7 +133,7 @@ dat.reg2 %>%
   pack_rows("Region: South", 14, 30) %>%
   pack_rows("Region: Northeast", 31, 39) %>%
   pack_rows("Region: Midwest", 40, 51) %>%
-  save_kable("~/Dropbox/TAMU/New_Projects/Git_edits/US_Gas/Kable_UStotal/tab.html")
+  save_kable("~/Kable_UStotal/tab.html")
 
 
 
