@@ -31,7 +31,7 @@ gas_data_all_edit2 <- gas_data_all_edit2 %>%
 gas_data_all_edit3 <- gas_data_all_edit2 %>%
   mutate(region = tolower(state))
 
-# mapping EDIT LEGEND/BACKGROUND
+# Map data: 48 states, color gradient for high-low of highest consumption data
 library(maps)
 states_map <- map_data("state")
 map.dat <- left_join(states_map, gas_data_all_edit3, by = "region")
