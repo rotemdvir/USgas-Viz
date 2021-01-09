@@ -133,7 +133,7 @@ treeplot4 <- ggplot(gas_data_all_edit3, aes(area = highest, fill = factor(year),
   facet_wrap(~factor(year), nrow = 3) +
   scale_fill_manual(values = mycolors) +
   labs(x = NULL, y = NULL,
-       title = "US Gas Consumption (1997-2019)",
+       title = "US Gas Consumption (2012-2019)",
        subtitle = "Highest consumption by state (year subgroups)",
        caption = "Data:USgas package") 
 
